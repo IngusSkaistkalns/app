@@ -1,15 +1,19 @@
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
   name: "app",
   entry: "./app.js",
   output: {
     path: './dist',
+    publicPath: '/dist/',
     filename: "script.js"
   },
   module: {
     loaders: [
       {
-        test: /\.jsx$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel'
       },
