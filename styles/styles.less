@@ -1,6 +1,75 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-size: 16px;
   font-family: 'Arial', sans-serif;
+  background: #eee;
+  color: #333;
+}
+
+.logo {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.loginform {
+  width: 20%;
+  margin: 0 auto;
+
+  label,
+  input,
+  button {
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    display: block;
+    margin: 5px 0;
+  }
+
+  label {
+    text-align: center;
+  }
+
+  input {
+    padding: 5px;
+  }
+
+  button {
+    color: #333;
+    background: #ccc;
+    border: 1px solid #999;
+    margin: 10px auto;
+    padding: 5px 10px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 960px)  {
+  .loginform {
+    width: 30%;
+  }
+}
+
+@media (max-width: 640px)  {
+  .loginform {
+    width: 50%;
+  }
+}
+
+@media (max-width: 320px) {
+  .loginform {
+    width: 90%;
+  }
 }
