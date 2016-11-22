@@ -4,7 +4,7 @@ module.exports = {
     extensions: ['', '.js', '.jsx']
   },
   name: "app",
-  entry: "./app.js",
+  entry: "./main.js",
   output: {
     path: './dist',
     publicPath: '/dist/',
